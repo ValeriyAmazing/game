@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.mainfield {
+    width: 80vw;
+    background: #008000;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    background: url(../img/bg1.jpg) center center;
+    background-size: cover;
+}
+
+.controls {
+    overflow: scroll;
+    width: 20vw;
+}
+
+.info-section {
+    width: 100%;
+    background: rgb(32, 86, 167)
+}
+
+.suply-info {
+    background: rgba(155, 170, 190, 0.555);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid blueviolet;
+}
+
+.sota {
+    width: 16vw;
+    height: 16vw;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+}
+
+.sota:hover {
+    background: rgba(10, 235, 186, 0.288);
+}
+
+.item {
+    padding: 15px;
+    border: solid 1px black;
+}
+
+.item-info {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.item-image {
+    width: 100%;
+}
