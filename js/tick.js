@@ -7,6 +7,13 @@ let balance = { metal: 0 }
 let income = { metal: 1 }
     // log(balance)
 
+function tick(interv) {
+    balance.metal += income.metal
+        // log(balance)
+    count.metal.replaceChildren(balance.metal)
+    setTimeout(tick, interv, interv)
+}
+
 
 function addIncome(arr, _name) {
     const newBuilding = arr.find(nam => nam.name === _name)
@@ -39,5 +46,7 @@ function getGlobal(...objs) {
         }
     }
 }
-getGlobal({ balance }, { addIncomeSimple }, { getGlobal }, { tickInterval }, { income }, { buildings }, { log })
+
+
+getGlobal({ balance }, { addIncomeSimple }, { getGlobal }, { tickInterval }, { income }, { buildings }, { log }, { tick })
 log(balance)

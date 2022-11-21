@@ -1,6 +1,5 @@
 import './tick.js';
 
-
 const infoSection = document.querySelector(`.info-section`)
 const board = document.querySelector('.board')
 const count = {
@@ -8,16 +7,10 @@ const count = {
 }
 let activeSota
 
-getGlobal({ activeSota })
+getGlobal({ count })
 
+// ?error?
 tick(tickInterval)
-
-function tick(interv) {
-    balance.metal += income.metal
-        // log(balance)
-    count.metal.replaceChildren(balance.metal)
-    setTimeout(tick, interv, interv)
-}
 
 function createEl(tag, _class, _src) {
     const elem = document.createElement(tag)
