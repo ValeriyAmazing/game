@@ -1,4 +1,3 @@
-import './script.js';
 const buildings = [{ name: 'factory', cost: { metal: 10 }, income: { metal: 1 } },
     { name: 'market', cost: { metal: 15 }, income: { metal: 2 } },
 ]
