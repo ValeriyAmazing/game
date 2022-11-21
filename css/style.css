@@ -13,11 +13,13 @@ body {
     display: flex;
 }
 
-.mainfield {
+.main-field {
     width: 80vw;
     background: #008000;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
     background: url(../img/bg1.jpg) center center;
     background-size: cover;
@@ -43,12 +45,15 @@ body {
     border: 2px solid blueviolet;
 }
 
+.board {
+    border-collapse: collapse;
+}
+
 .sota {
     width: 16vw;
     height: 16vw;
     border: solid 1px black;
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .sota:hover {
@@ -67,4 +72,11 @@ body {
 
 .item-image {
     width: 100%;
+}
+
+.builded {
+    width: 100%;
+    height: 100%;
+    background: url('../img/building.png') center center no-repeat;
+    background-size: contain;
 }
